@@ -15,13 +15,19 @@
         <form action="" method="post">
         Titre:<input type="text" name="titre"><br>
         Date: <input type="date" name="date"><br>
-        Description<textarea> </textarea>
+        Description<textarea name="description"> </textarea>
         <br>
         <input type="submit" value="ajouter">
         
         </form>
         
+      <ul>  
+        <c:foreach items="${list}" var="todos">
+        <li>${todos.titre }/ date: ${todos.date}</li>
+        <li>${todos.description} </li>
         
+        </c:foreach>
+        </ul>
         </p>
     </body>
 </html>
