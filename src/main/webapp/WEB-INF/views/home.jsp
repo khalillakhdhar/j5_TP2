@@ -8,7 +8,18 @@
         <title>Home</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
-        <p>This is the homepage!</p>
+        <h1>Gérer les rappel!</h1>
+        <p>
+        <form action="" method="post">
+        Titre:<input type="text" name="titre"><br>
+        Date: <input type="date" name="date"><br>
+        Description<textarea> </textarea>
+        <br>
+        <input type="submit" value="ajouter">
+        
+        </form>
+        
+        
+        </p>
     </body>
 </html>
