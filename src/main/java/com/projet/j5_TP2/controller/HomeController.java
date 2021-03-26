@@ -18,8 +18,13 @@ import data.Todo;
 public class HomeController {
 
 	@RequestMapping(value="/")
-	public ModelAndView test(HttpServletResponse response) throws IOException{
+	public ModelAndView test(HttpServletResponse response,Model m) throws IOException{
+		Rappel r=new Rappel("teste", "teste", "teste");
+		Todo t=new Todo();
+		t.add(r);
+		m.addAttribute("list",Todo.rappels);
 		return new ModelAndView("home");
+
 	}
 	
 	@RequestMapping(value="/",method = RequestMethod.POST)
@@ -29,6 +34,7 @@ public class HomeController {
 		String description=req.getParameter("description");
 		String date=req.getParameter("date");
 		Rappel r=new Rappel(titre, date, description) ;
+		
 		Todo t=new Todo();
 		t.add(r);
 		m.addAttribute("list",Todo.rappels);

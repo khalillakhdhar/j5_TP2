@@ -22,11 +22,11 @@
         </form>
         
       <ul>  
-        <c:foreach items="${list}" var="todos">
+        <c:forEach items="${list}" var="todos">
         <li>${todos.titre }/ date: ${todos.date}</li>
         <li>${todos.description} </li>
         
-        </c:foreach>
+        </c:forEach>
         </ul>
         </p>
     </body>
