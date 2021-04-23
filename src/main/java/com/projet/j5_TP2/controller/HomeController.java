@@ -40,7 +40,7 @@ public class HomeController {
 		m.addAttribute("list",Todo.rappels);
 		
 		
-		return "home";
+		return "liste";
 	}
 	
 	
