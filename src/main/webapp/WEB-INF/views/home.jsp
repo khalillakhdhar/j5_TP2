@@ -1,4 +1,3 @@
-<%@ taglib uri="http://java.sun.com/jstl/core" prefix="c" %>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
@@ -21,13 +20,7 @@
         
         </form>
         
-      <ul>  
-        <c:forEach items="${list}" var="todos">
-        <li>${todos.titre }/ date: ${todos.date}</li>
-        <li>${todos.description} </li>
-        
-        </c:forEach>
-        </ul>
+    
         </p>
     </body>
 </html>
